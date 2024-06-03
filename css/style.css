@@ -1,22 +1,33 @@
+:root {
+  /* Primary Colors */
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  
+  /* Neutral Colors */
+  --color-very-dark-blue-bg: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+} 
 *{
   padding: 0%;
   margin: 0%;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
-  background-color: hsl(217, 54%, 11%);
+  background-color: var(--color-very-dark-blue-bg);
   color: white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Outfit", sans-serif;
 }
 
 .container{
-  background-color: hsl(216, 50%, 16%);
+  background-color: var(--color-very-dark-blue-card-bg);
   border-radius: 15px;
-  width: 305px;
+  width: 300px;
   padding: 1.5rem;
 }
 .image {
@@ -64,30 +75,30 @@ body {
 }
 .h3 {
   margin-top: 1.5rem;
-  font-weight: 600px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .h3:hover {
-  color: hsl(178, 100%, 50%);
+  color:var(--color-cyan);
   cursor: pointer;
 }
 .discription {
   margin: 1rem 0.1rem 0;
-  color: hsl(215, 51%, 70%);
+  color: var(--color-soft-blue);
   line-height: 28px;
   font-weight: 400;
   letter-spacing: 1px;
+  max-width:300px;
 }
 .price-days {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid hsl(215, 51%, 70%);
+  border-bottom: 1px solid var(--color-soft-blue);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
 .price {
   display: flex;
-  color: hsl(178, 100%, 50%);
+  color: var(--color-cyan);
   align-items: center;
   font-size: 15px;
   letter-spacing: 1px;
@@ -101,7 +112,7 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 1px;
-  color: hsl(215, 51%, 70%);
+  color: var(--color-soft-blue);
   margin-top: 1rem;
 }
 .days img {
@@ -112,26 +123,26 @@ body {
   text-align: center;
 }
 .creator img {
-  width: 34px;
-  height: 34px;
-  border: 2px solid hsl(0, 0%, 100%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--color-white);
   border-radius: 50px;
   margin-right: 15px;
 }
 
 .author-name {
-  color: hsl(215, 51%, 70%);
+  color: var(--color-soft-blue);
   font-weight: 500;
 }
 .author-name a {
-  color: hsl(0, 0%, 100%);
+  color: var(--color-white);
   font-weight: 400;
   text-decoration: none;
   margin-left: 5px;
   cursor: pointer;
 }
 .author-name a:hover {
-  color: hsl(178, 100%, 50%);
+  color: var(--color-cyan);
   cursor: pointer;
 }
 .creator p {
